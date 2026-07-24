@@ -1,0 +1,214 @@
+[
+  {
+    "id": "t1",
+    "title": "Sagrada Familia: Tour guiado privado",
+    "type": "Tour guiado",
+    "languages": "Inglés",
+    "duration": "1 h 30 min",
+    "availability": "Consultar fechas",
+    "includes": [
+      "Entrada con acceso rápido",
+      "Guía profesional en directo",
+      "Visita guiada"
+    ],
+    "priceFrom": 259,
+    "currency": "EUR",
+    "rating": 5,
+    "reviewCount": 2,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/deca6d612ddc415db3de46f57557910f-300x300.avif",
+    "images": [
+      "https://stay4days.com/wp-content/uploads/2025/06/deca6d612ddc415db3de46f57557910f-300x300.avif",
+      "https://stay4days.com/wp-content/uploads/2025/06/a373e1c5f46641ebac01599ff71eb61c-300x300.avif"
+    ],
+    "tiqetsUrl": "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-tour-guiado-privado-p1093486/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t2",
+    "title": "Sagrada Familia: Visita Guiada + Acceso a la Torre",
+    "type": "Tour guiado",
+    "languages": "Inglés",
+    "duration": "1 h 30 min",
+    "availability": "Mañana",
+    "includes": [
+      "Entrada con acceso rápido",
+      "Guía profesional en directo",
+      "Visita guiada",
+      "Acceso a la torre"
+    ],
+    "priceFrom": 109,
+    "currency": "EUR",
+    "rating": 2,
+    "reviewCount": 4,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/d924a74e6cb64892a247415602abde14-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-guided-tour-tower-access-p1113408/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t3",
+    "title": "Sagrada Familia y Park Güell: Visita guiada",
+    "type": "Tour guiado",
+    "languages": "Español, Inglés, Francés, Japonés, Coreano, Chino",
+    "duration": "4 h – 4 h 30 min",
+    "availability": "Hoy",
+    "includes": [
+      "Entrada dedicada a la Sagrada Familia",
+      "Entrada al Park Güell",
+      "Visita guiada"
+    ],
+    "priceFrom": 101,
+    "currency": "EUR",
+    "rating": 4.2,
+    "reviewCount": 214,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/d1a82b58e25047449ed153f40249cf60-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/checkout/sagrada-familia-y-park-guell-visita-guiada-g1113413/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t4",
+    "title": "Sagrada Familia y Barcelona: Excursión de día completo",
+    "type": "Tour guiado",
+    "languages": "Español, Inglés, Japonés, Coreano, Chino",
+    "duration": "3 h 45 min – 8 h",
+    "availability": "Hoy",
+    "includes": [
+      "Entrada rápida a la Sagrada Familia y más",
+      "Guía profesional en varios idiomas"
+    ],
+    "priceFrom": 133,
+    "currency": "EUR",
+    "rating": 4.2,
+    "reviewCount": 92,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/ae52de8a9ecd4369ab352fd3b36841f5-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/checkout/sagrada-familia-y-barcelona-excursion-de-dia-completo-g1111458/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t5",
+    "title": "Pase turístico Lo mejor de Barcelona",
+    "type": "Pase de atracciones",
+    "availability": "Hoy",
+    "includes": [
+      "Sagrada Familia",
+      "Parque Güell",
+      "Casa Batlló",
+      "1 actividad increíble"
+    ],
+    "priceFrom": 94,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 1180,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/19944e616eb84ad3b204463508875f98-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-best-of-barcelona-bundle-p1031461/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t6",
+    "title": "Barcelona Pass",
+    "type": "Pase de exploración",
+    "availability": "Hoy",
+    "includes": [
+      "Sagrada Familia, Parque Güell, Casa Batlló o La Pedrera",
+      "1 actividad increíble"
+    ],
+    "priceFrom": 97,
+    "currency": "EUR",
+    "rating": 4.4,
+    "reviewCount": 3485,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/1b883c42688d419b86640fad24906710-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-barcelona-pass-p1012495/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t7",
+    "title": "El Paquete Gaudí",
+    "type": "Pase de atracciones",
+    "availability": "Hoy",
+    "includes": [
+      "Sagrada Familia",
+      "Parque Güell",
+      "Audioguía de Barcelona"
+    ],
+    "priceFrom": 66,
+    "currency": "EUR",
+    "rating": 4.4,
+    "reviewCount": 1176,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/b91367e5cd584aebaae6c2ae2d8b9326-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-el-paquete-gaudi-p1012496/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t8",
+    "title": "Sagrada Familia: Sáltate la cola + Visita guiada",
+    "type": "Tour guiado",
+    "languages": "Español, Alemán, Inglés, Francés, Italiano, Neerlandés, Chino",
+    "duration": "1 h 30 min",
+    "availability": "Mañana",
+    "includes": [
+      "Entrada dedicada a la Sagrada Familia",
+      "Guía profesional en directo en varios idiomas"
+    ],
+    "priceFrom": 62,
+    "currency": "EUR",
+    "rating": 4.4,
+    "reviewCount": 2895,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/7a7a40b3200648509a2101f0cf97350d-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/checkout/sagrada-familia-saltate-la-cola-visita-guiada-g1111513/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t9",
+    "title": "Sagrada Familia: Entrada Rápida con Torres Opcionales",
+    "type": "Entrada",
+    "availability": "Consultar fechas",
+    "includes": [
+      "Entrada de acceso rápido a la Sagrada Familia",
+      "Aplicación descargable de la Sagrada Familia con audioguía"
+    ],
+    "priceFrom": 33.8,
+    "currency": "EUR",
+    "rating": 4.7,
+    "reviewCount": 60110,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/8323f3ff248e49ebad90b9a17ea0e354-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  },
+  {
+    "id": "t10",
+    "title": "Sagrada Familia: Go With a Local Visitas guiadas",
+    "type": "Tour guiado",
+    "languages": "Español, Alemán, Inglés, Francés, Italiano",
+    "duration": "1 h 30 min",
+    "availability": "Mañana",
+    "includes": [
+      "Visita guiada con local",
+      "Entrada a la Sagrada Familia"
+    ],
+    "priceFrom": 49.5,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviewCount": 7732,
+    "image": "https://stay4days.com/wp-content/uploads/2025/06/3eb4251bd22b45d0b79b17d1d6c3116a-300x300.avif",
+    "images": [],
+    "tiqetsUrl": "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",
+    "active": true,
+    "createdAt": "2025-06-01T10:00:00.000Z"
+  }
+]

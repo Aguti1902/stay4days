@@ -1,0 +1,95 @@
+{
+  "pageViews": 12484,
+  "propertyViews": 6321,
+  "searches": 2141,
+  "chatMessages": 894,
+  "contacts": 0,
+  "ticketClicks": 340,
+  "lastUpdated": "2026-07-24T09:47:22.576Z",
+  "daily": [
+    {
+      "date": "2026-07-11",
+      "views": 817,
+      "contacts": 1,
+      "chats": 48
+    },
+    {
+      "date": "2026-07-12",
+      "views": 817,
+      "contacts": 6,
+      "chats": 23
+    },
+    {
+      "date": "2026-07-13",
+      "views": 658,
+      "contacts": 7,
+      "chats": 31
+    },
+    {
+      "date": "2026-07-14",
+      "views": 862,
+      "contacts": 6,
+      "chats": 47
+    },
+    {
+      "date": "2026-07-15",
+      "views": 705,
+      "contacts": 1,
+      "chats": 22
+    },
+    {
+      "date": "2026-07-16",
+      "views": 796,
+      "contacts": 0,
+      "chats": 46
+    },
+    {
+      "date": "2026-07-17",
+      "views": 796,
+      "contacts": 4,
+      "chats": 43
+    },
+    {
+      "date": "2026-07-18",
+      "views": 808,
+      "contacts": 3,
+      "chats": 37
+    },
+    {
+      "date": "2026-07-19",
+      "views": 825,
+      "contacts": 8,
+      "chats": 23
+    },
+    {
+      "date": "2026-07-20",
+      "views": 892,
+      "contacts": 3,
+      "chats": 54
+    },
+    {
+      "date": "2026-07-21",
+      "views": 660,
+      "contacts": 5,
+      "chats": 41
+    },
+    {
+      "date": "2026-07-22",
+      "views": 889,
+      "contacts": 3,
+      "chats": 47
+    },
+    {
+      "date": "2026-07-23",
+      "views": 899,
+      "contacts": 4,
+      "chats": 22
+    },
+    {
+      "date": "2026-07-24",
+      "views": 725,
+      "contacts": 2,
+      "chats": 46
+    }
+  ]
+}

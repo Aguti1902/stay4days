@@ -1,0 +1,35 @@
+[
+  {
+    "id": "c1",
+    "name": "Laura Martínez",
+    "email": "laura.m@example.com",
+    "phone": "+34 612 345 678",
+    "message": "Busco apartamento en Eixample para 3 meses (septiembre-noviembre).",
+    "propertyName": "Apartamento lujo & piscina junto Barcelona Centro",
+    "propertyId": 314887,
+    "source": "temporary",
+    "status": "new",
+    "createdAt": "2026-07-20T09:12:00.000Z"
+  },
+  {
+    "id": "c2",
+    "name": "James Wilson",
+    "email": "james.w@example.com",
+    "phone": "+44 7700 900123",
+    "message": "Interested in Casa Nina for 10 guests in August.",
+    "propertyId": 425059,
+    "propertyName": "Casa Nina junto Barcelona Centro y playa",
+    "source": "property",
+    "status": "contacted",
+    "createdAt": "2026-07-18T16:40:00.000Z"
+  },
+  {
+    "id": "c3",
+    "name": "Sophie Dubois",
+    "email": "sophie.d@example.com",
+    "message": "Consulta por alquiler temporal cerca de Gràcia, 2 personas, 6 meses.",
+    "source": "chat",
+    "status": "new",
+    "createdAt": "2026-07-22T11:05:00.000Z"
+  }
+]

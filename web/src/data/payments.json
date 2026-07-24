@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pay_ngarl6t8_mryqwiai",
+    "guestName": "Alejandro Gutiérrez Gómez",
+    "email": "info@agutidesigns.com",
+    "propertyId": 461758,
+    "propertyName": "Apt.completo y Unico junto playa&Bcncentro (5 min)",
+    "amount": 629,
+    "currency": "EUR",
+    "status": "pending",
+    "checkIn": "2026-08-19",
+    "checkOut": "2026-08-21",
+    "createdAt": "2026-07-24T09:36:09.882Z",
+    "notes": "OwnerRez quote #6928696 · pago en https://booking.ownerrez.com/c8a94995-d163-4c01-b6da-296f5eaa952d/confirm"
+  },
+  {
+    "id": "p1",
+    "guestName": "Carlos Ruiz",
+    "email": "carlos.ruiz@example.com",
+    "propertyId": 314883,
+    "propertyName": "Apartamento con encanto en Barcelona&Playa",
+    "amount": 1140,
+    "currency": "EUR",
+    "status": "paid",
+    "checkIn": "2026-07-10",
+    "checkOut": "2026-07-16",
+    "createdAt": "2026-07-02T14:20:00.000Z"
+  },
+  {
+    "id": "p2",
+    "guestName": "Emma Rossi",
+    "email": "emma.rossi@example.com",
+    "propertyId": 314886,
+    "propertyName": "Casa Luna, junto playa y Barcelona Centro",
+    "amount": 2900,
+    "currency": "EUR",
+    "status": "paid",
+    "checkIn": "2026-08-01",
+    "checkOut": "2026-08-20",
+    "createdAt": "2026-07-15T10:00:00.000Z"
+  },
+  {
+    "id": "p3",
+    "guestName": "Miguel Santos",
+    "email": "miguel.santos@example.com",
+    "propertyId": 314879,
+    "propertyName": "Apartamento y piscina cerca de Barcelona",
+    "amount": 4350,
+    "currency": "EUR",
+    "status": "pending",
+    "checkIn": "2026-09-01",
+    "checkOut": "2026-11-30",
+    "createdAt": "2026-07-21T18:30:00.000Z",
+    "notes": "Alquiler temporal 3 meses"
+  }
+]

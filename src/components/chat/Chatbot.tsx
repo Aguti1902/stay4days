@@ -52,9 +52,9 @@ export function Chatbot() {
   if (pathname?.startsWith("/admin")) return null;
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end">
       {open && (
-        <div className="mb-3 flex h-[460px] w-[min(380px,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_20px_60px_rgba(11,31,42,0.25)]">
+        <div className="flex h-[min(520px,calc(100dvh-6rem))] w-[min(380px,calc(100vw-2rem))] flex-col overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_20px_60px_rgba(11,31,42,0.25)]">
           <div className="flex items-center justify-between bg-ink px-4 py-3 text-white">
             <div>
               <p className="font-display text-lg">Asistente Stay4Days</p>
@@ -91,14 +91,16 @@ export function Chatbot() {
           </form>
         </div>
       )}
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="floaty btn btn-primary shadow-[0_12px_30px_rgba(11,31,42,0.3)]"
-      >
-        <MessageCircle size={18} />
-        Consultar
-      </button>
+      {!open && (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="floaty btn btn-primary shadow-[0_12px_30px_rgba(11,31,42,0.3)]"
+        >
+          <MessageCircle size={18} />
+          Consultar
+        </button>
+      )}
     </div>
   );
 }

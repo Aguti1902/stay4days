@@ -10,23 +10,50 @@ import type {
 } from "./types";
 import { SEED_CONTACTS, SEED_PAYMENTS, SEED_TICKETS } from "./seed-data";
 
-const DATA_DIR = path.join(process.cwd(), "src", "data");
+/** Bundled seed/data shipped with the deploy (read-only on Vercel). */
+const SEED_DIR = path.join(process.cwd(), "src", "data");
+/** Writable store: /tmp on Vercel, local data dir otherwise. */
+const DATA_DIR = process.env.VERCEL
+  ? path.join("/tmp", "stay4days-data")
+  : SEED_DIR;
 
-async function readJson<T>(file: string, fallback: T): Promise<T> {
-  const full = path.join(DATA_DIR, file);
+async function readSeedFile(file: string): Promise<string | null> {
   try {
-    const raw = await fs.readFile(full, "utf8");
-    return JSON.parse(raw) as T;
+    return await fs.readFile(path.join(SEED_DIR, file), "utf8");
   } catch {
-    await writeJson(file, fallback);
-    return fallback;
+    return null;
   }
 }
 
+async function readJson<T>(file: string, fallback: T): Promise<T> {
+  const writablePath = path.join(DATA_DIR, file);
+  try {
+    const raw = await fs.readFile(writablePath, "utf8");
+    return JSON.parse(raw) as T;
+  } catch {
+    // fall through to seed
+  }
+
+  const seedRaw = await readSeedFile(file);
+  if (seedRaw) {
+    try {
+      return JSON.parse(seedRaw) as T;
+    } catch {
+      // ignore parse errors
+    }
+  }
+
+  return fallback;
+}
+
 async function writeJson<T>(file: string, data: T) {
-  const full = path.join(DATA_DIR, file);
-  await fs.mkdir(DATA_DIR, { recursive: true });
-  await fs.writeFile(full, JSON.stringify(data, null, 2), "utf8");
+  try {
+    await fs.mkdir(DATA_DIR, { recursive: true });
+    await fs.writeFile(path.join(DATA_DIR, file), JSON.stringify(data, null, 2), "utf8");
+  } catch (err) {
+    // Vercel/serverless may reject writes; never crash the page for persistence.
+    console.warn(`[store] write failed for ${file}:`, err instanceof Error ? err.message : err);
+  }
 }
 
 const defaultStats = (): SiteStats => ({

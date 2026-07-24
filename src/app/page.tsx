@@ -8,6 +8,7 @@ import { TicketCard } from "@/components/tickets/TicketCard";
 import { getVisibleProperties, getTickets, bumpStat } from "@/lib/store";
 import { PROPERTY_TYPES, NEIGHBORHOODS } from "@/lib/property-types";
 import { KeyRound, ShieldCheck, CalendarClock, Sparkles, Star } from "lucide-react";
+import { ReviewsCarousel } from "@/components/home/ReviewsCarousel";
 
 const GUEST_REVIEWS = [
   {
@@ -24,6 +25,31 @@ const GUEST_REVIEWS = [
     name: "Ana y Carlos",
     place: "Badalona · fin de semana",
     text: "Mucho mejor que en otros portales: misma calidad, menos comisión y trato familiar. Volveremos seguro en nuestra próxima visita a Barcelona.",
+  },
+  {
+    name: "Sophie R.",
+    place: "Eixample · 10 noches",
+    text: "La ubicación era perfecta y el check-in online súper fácil. Sentimos que teníamos una agencia familiar detrás, no un portal anónimo.",
+  },
+  {
+    name: "Miguel Á.",
+    place: "Alquiler temporal · 3 meses",
+    text: "Estuve por prácticas y el piso venía listo para entrar. Pude reservar y pagar online sin líos. Muy recomendable para estancias medias.",
+  },
+  {
+    name: "Emma & Paul",
+    place: "Costa cerca de Barcelona",
+    text: "Casa limpia, con piscina y a un salto de la ciudad. El precio directo compensó mucho frente a Airbnb y Booking.",
+  },
+  {
+    name: "Javier P.",
+    place: "Gràcia · 2 semanas",
+    text: "Respondieron rápido por WhatsApp ante cualquier duda. El apartamento era exactamente como en las fotos. Experiencia 10/10.",
+  },
+  {
+    name: "Chiara B.",
+    place: "Estancia de 6 meses",
+    text: "Ideal para un semestre en Barcelona. Flexibilidad de fechas, vivienda amueblada y trato cercano de Stay4Days.",
   },
 ];
 
@@ -231,26 +257,8 @@ export default async function HomePage() {
           )}
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3 md:gap-0">
-          {GUEST_REVIEWS.map((review, index) => (
-            <blockquote
-              key={review.name}
-              className={`flex flex-col md:px-8 ${
-                index > 0 ? "border-t border-[var(--line)] pt-8 md:border-t-0 md:border-l md:pt-0" : "md:pl-0"
-              }`}
-            >
-              <div className="flex gap-0.5 text-[var(--sun)]">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={14} className="fill-sun text-sun" />
-                ))}
-              </div>
-              <p className="mt-4 flex-1 font-display text-xl leading-snug text-ink">“{review.text}”</p>
-              <footer className="mt-6">
-                <p className="font-semibold text-ink">{review.name}</p>
-                <p className="text-sm text-ink-soft">{review.place}</p>
-              </footer>
-            </blockquote>
-          ))}
+        <div className="mt-2">
+          <ReviewsCarousel reviews={GUEST_REVIEWS} />
         </div>
       </section>
 

@@ -69,26 +69,26 @@ export function PaymentsTableWithFilters({
           <Filter size={16} className="text-sea" />
           <h2 className="font-display text-xl">Filtros</h2>
         </div>
-        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Buscar
-            <div className="relative">
+            <div className="relative min-w-0">
               <Search size={14} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" />
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Huésped, email, propiedad…"
-                className="w-full rounded-xl border border-[var(--line)] py-2.5 pl-9 pr-3 text-sm font-semibold normal-case tracking-normal"
+                className="w-full min-w-0 rounded-xl border border-[var(--line)] py-2.5 pl-9 pr-3 text-sm font-semibold normal-case tracking-normal"
               />
             </div>
           </label>
 
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Vivienda
             <select
               value={property}
               onChange={(e) => setProperty(e.target.value)}
-              className="rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
+              className="w-full min-w-0 max-w-full truncate rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
             >
               <option value="all">Todas</option>
               {propertyOptions.map((name) => (
@@ -99,12 +99,12 @@ export function PaymentsTableWithFilters({
             </select>
           </label>
 
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Estado
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value as typeof status)}
-              className="rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
+              className="w-full min-w-0 max-w-full rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
             >
               <option value="all">Todos</option>
               <option value="paid">Pagado</option>
@@ -113,35 +113,35 @@ export function PaymentsTableWithFilters({
             </select>
           </label>
 
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Filtrar por
             <select
               value={dateField}
               onChange={(e) => setDateField(e.target.value as typeof dateField)}
-              className="rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
+              className="w-full min-w-0 rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
             >
               <option value="checkIn">Fecha de entrada</option>
               <option value="createdAt">Fecha de registro</option>
             </select>
           </label>
 
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Desde
             <input
               type="date"
               value={from}
               onChange={(e) => setFrom(e.target.value)}
-              className="rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
+              className="w-full min-w-0 rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
             />
           </label>
 
-          <label className="grid gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
+          <label className="grid min-w-0 gap-1 text-xs font-bold uppercase tracking-[0.08em] text-ink-soft">
             Hasta
             <input
               type="date"
               value={to}
               onChange={(e) => setTo(e.target.value)}
-              className="rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
+              className="w-full min-w-0 rounded-xl border border-[var(--line)] px-3 py-2.5 text-sm font-semibold normal-case tracking-normal"
             />
           </label>
         </div>

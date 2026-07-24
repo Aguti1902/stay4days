@@ -85,7 +85,7 @@ export function Header() {
       </header>
 
       {open && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[var(--ink)] text-white md:hidden">
+        <div className="fixed inset-0 z-[70] flex flex-col bg-[var(--ink)] text-white md:hidden">
           <div className="container-s4d flex h-16 items-center justify-between">
             <Link href="/" className="relative block h-10 w-[160px]" onClick={() => setOpen(false)}>
               <Image

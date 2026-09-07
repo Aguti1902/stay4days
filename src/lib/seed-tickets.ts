@@ -19,11 +19,8 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 5,
     reviewCount: 2,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/deca6d612ddc415db3de46f57557910f-300x300.avif",
-    images: [
-      "https://stay4days.com/wp-content/uploads/2025/06/deca6d612ddc415db3de46f57557910f-300x300.avif",
-      "https://stay4days.com/wp-content/uploads/2025/06/a373e1c5f46641ebac01599ff71eb61c-300x300.avif",
-    ],
+      "/tickets/t1.jpg",
+    images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-tour-guiado-privado-p1093486/",
     active: true,
@@ -47,7 +44,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 2,
     reviewCount: 4,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/d924a74e6cb64892a247415602abde14-300x300.avif",
+      "/tickets/t2.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-guided-tour-tower-access-p1113408/",
@@ -71,7 +68,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.2,
     reviewCount: 214,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/d1a82b58e25047449ed153f40249cf60-300x300.avif",
+      "/tickets/t3.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/checkout/sagrada-familia-y-park-guell-visita-guiada-g1113413/",
@@ -94,7 +91,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.2,
     reviewCount: 92,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/ae52de8a9ecd4369ab352fd3b36841f5-300x300.avif",
+      "/tickets/t4.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/checkout/sagrada-familia-y-barcelona-excursion-de-dia-completo-g1111458/",
@@ -112,7 +109,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.5,
     reviewCount: 1180,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/19944e616eb84ad3b204463508875f98-300x300.avif",
+      "/tickets/t5.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-best-of-barcelona-bundle-p1031461/",
@@ -133,7 +130,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.4,
     reviewCount: 3485,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/1b883c42688d419b86640fad24906710-300x300.avif",
+      "/tickets/t6.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-barcelona-pass-p1012495/",
@@ -151,7 +148,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.4,
     reviewCount: 1176,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/b91367e5cd584aebaae6c2ae2d8b9326-300x300.avif",
+      "/tickets/t7.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-el-paquete-gaudi-p1012496/",
@@ -174,7 +171,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.4,
     reviewCount: 2895,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/7a7a40b3200648509a2101f0cf97350d-300x300.avif",
+      "/tickets/t8.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/checkout/sagrada-familia-saltate-la-cola-visita-guiada-g1111513/",
@@ -195,7 +192,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.7,
     reviewCount: 60110,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/8323f3ff248e49ebad90b9a17ea0e354-300x300.avif",
+      "/tickets/t9.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",
@@ -215,7 +212,7 @@ export const SEED_TICKETS: Ticket[] = [
     rating: 4.8,
     reviewCount: 7732,
     image:
-      "https://stay4days.com/wp-content/uploads/2025/06/3eb4251bd22b45d0b79b17d1d6c3116a-300x300.avif",
+      "/tickets/t10.jpg",
     images: [],
     tiqetsUrl:
       "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",

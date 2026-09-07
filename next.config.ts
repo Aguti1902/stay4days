@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "uc.orez.io" },
       { protocol: "https", hostname: "cdn.ownerrez.com" },
       { protocol: "https", hostname: "**.tiqets.com" },
+      { protocol: "https", hostname: "cdn.tiqets.com" },
+      { protocol: "https", hostname: "aws-tiqets-cdn.imgix.net" },
     ],
   },
 };

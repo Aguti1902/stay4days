@@ -20,9 +20,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 2,
     image:
       "/tickets/t1.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/a373e1c5f46641ebac01599ff71eb61c.jpeg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-tour-guiado-privado-p1093486/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-private-guided-tour-p1121260/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -45,9 +45,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 4,
     image:
       "/tickets/t2.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/87f02b89c6224987aa70c8cac3428b53.jpeg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-guided-tour-tower-access-p1113408/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-visita-guiada-acceso-a-la-torre-p1113408/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -69,9 +69,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 214,
     image:
       "/tickets/t3.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/fea5f68dc321405cbf108e22defd78b8.jpeg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/checkout/sagrada-familia-y-park-guell-visita-guiada-g1113413/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-y-park-guell-tour-guiado-p1113413/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -92,9 +92,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 92,
     image:
       "/tickets/t4.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/78135277137a4e608b22e5681c1acb0e.jpeg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/checkout/sagrada-familia-y-barcelona-excursion-de-dia-completo-g1111458/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-visita-guiada-a-la-sagrada-familia-y-la-arquitectura-de-gaudi-p1111458/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -110,9 +110,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 1180,
     image:
       "/tickets/t5.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/cb857cc602fc487a85ff93088fda2aee.JPG"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-best-of-barcelona-bundle-p1031461/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-pase-lo-mejor-de-barcelona-p1031461/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -131,7 +131,7 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 3485,
     image:
       "/tickets/t6.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/71de97cce36d4459b161146355618eac.jpg"],
     tiqetsUrl:
       "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-barcelona-pass-p1012495/",
     active: true,
@@ -149,9 +149,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 1176,
     image:
       "/tickets/t7.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/ad1ccc2a9ea44da6bb10e78176baee36.jpg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-el-paquete-gaudi-p1012496/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-paquete-gaudi-p1012496/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -172,9 +172,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 2895,
     image:
       "/tickets/t8.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/f9946dce4f4a48a88ec0e1d29478987b.jpg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/checkout/sagrada-familia-saltate-la-cola-visita-guiada-g1111513/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-entrada-sin-colas-tour-guiado-p1111513/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -193,9 +193,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 60110,
     image:
       "/tickets/t9.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/8323f3ff248e49ebad90b9a17ea0e354.jpg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-entrada-de-acceso-rapido-torres-opcionales-p1111400/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },
@@ -213,9 +213,9 @@ export const SEED_TICKETS: Ticket[] = [
     reviewCount: 7732,
     image:
       "/tickets/t10.jpg",
-    images: [],
+    images: ["https://aws-tiqets-cdn.imgix.net/images/content/3eb4251bd22b45d0b79b17d1d6c3116a.jpg"],
     tiqetsUrl:
-      "https://www.tiqets.com/es/checkout/sagrada-familia-entrada-rapida-con-torres-opcionales-g1111400/",
+      "https://www.tiqets.com/es/atracciones-barcelona-c66342/entradas-para-sagrada-familia-ve-con-un-guia-local-p1111443/",
     active: true,
     createdAt: "2025-06-01T10:00:00.000Z",
   },

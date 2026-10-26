@@ -56,8 +56,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.14em] text-white/50">Contacto</p>
           <div className="mt-4 flex flex-col gap-2 text-sm text-white/85">
-            <a href="tel:+34636042534">+34 636 042 534</a>
-            <a href="mailto:stayfourdays@gmail.com">stayfourdays@gmail.com</a>
+            <a href={LEGAL.phoneHref}>{LEGAL.phone}</a>
             <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer">
               WhatsApp
             </a>

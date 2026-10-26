@@ -24,15 +24,22 @@ export default function AvisoLegalPage() {
             <strong>Domicilio:</strong> {LEGAL.domicilio}
           </li>
           <li>
-            <strong>Correo electrónico:</strong>{" "}
-            <a href={`mailto:${LEGAL.email}`} className="text-sea hover:underline">
-              {LEGAL.email}
+            <strong>Teléfono:</strong>{" "}
+            <a href={LEGAL.phoneHref} className="text-sea hover:underline">
+              {LEGAL.phone}
             </a>
           </li>
           <li>
-            <strong>Teléfono / WhatsApp:</strong>{" "}
-            <a href={LEGAL.phoneHref} className="text-sea hover:underline">
-              {LEGAL.phone}
+            <strong>WhatsApp:</strong>{" "}
+            <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer" className="text-sea hover:underline">
+              +34 638 939 458
+            </a>
+          </li>
+          <li>
+            <strong>Formulario de contacto:</strong>{" "}
+            <a href={LEGAL.contactPath} className="text-sea hover:underline">
+              {LEGAL.site}
+              {LEGAL.contactPath}
             </a>
           </li>
           <li>

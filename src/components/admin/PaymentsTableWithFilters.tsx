@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { PaymentRecord } from "@/lib/types";
 import { formatDate, formatEuro } from "@/lib/utils";
 import { PaymentDeleteButton } from "@/components/admin/PaymentAdminPanel";
+import { PaymentStatusActions } from "@/components/admin/PaymentStatusActions";
 import { Filter, Search, X } from "lucide-react";
 
 const STATUS_LABEL: Record<PaymentRecord["status"], string> = {
@@ -196,17 +197,20 @@ export function PaymentsTableWithFilters({
                     <div className="text-ink-soft">{formatDate(p.createdAt)}</div>
                   </td>
                   <td className="px-4 py-3">
-                    <span
-                      className={`rounded-full px-2.5 py-1 text-xs font-bold uppercase ${
-                        p.status === "paid"
-                          ? "bg-sea/10 text-sea-deep"
-                          : p.status === "pending"
-                            ? "bg-[var(--sun)]/15 text-[#b07620]"
-                            : "bg-ink/5 text-ink-soft"
-                      }`}
-                    >
-                      {STATUS_LABEL[p.status]}
-                    </span>
+                    <div className="flex flex-col gap-2">
+                      <span
+                        className={`w-fit rounded-full px-2.5 py-1 text-xs font-bold uppercase ${
+                          p.status === "paid"
+                            ? "bg-sea/10 text-sea-deep"
+                            : p.status === "pending"
+                              ? "bg-[var(--sun)]/15 text-[#b07620]"
+                              : "bg-ink/5 text-ink-soft"
+                        }`}
+                      >
+                        {STATUS_LABEL[p.status]}
+                      </span>
+                      <PaymentStatusActions id={p.id} status={p.status} />
+                    </div>
                   </td>
                   <td className="px-4 py-3">
                     <PaymentDeleteButton id={p.id} />

@@ -39,6 +39,7 @@ export function PaymentAdminPanel({ deleteOnlyId }: { deleteOnlyId?: string }) {
         checkIn: form.get("checkIn"),
         checkOut: form.get("checkOut"),
         notes: form.get("notes"),
+        notify: form.get("notify") === "on",
       }),
     });
     setLoading(false);
@@ -60,6 +61,10 @@ export function PaymentAdminPanel({ deleteOnlyId }: { deleteOnlyId?: string }) {
       <input name="checkIn" type="date" className="rounded-xl border border-[var(--line)] px-3 py-2 text-sm" />
       <input name="checkOut" type="date" className="rounded-xl border border-[var(--line)] px-3 py-2 text-sm" />
       <input name="notes" placeholder="Notas" className="rounded-xl border border-[var(--line)] px-3 py-2 text-sm md:col-span-2" />
+      <label className="flex items-center gap-2 text-xs font-semibold text-ink-soft md:col-span-2">
+        <input name="notify" type="checkbox" defaultChecked className="rounded border-[var(--line)]" />
+        Enviar email al huésped al guardar
+      </label>
       <button type="submit" disabled={loading} className="btn btn-primary">
         {loading ? "Guardando…" : "Añadir pago"}
       </button>

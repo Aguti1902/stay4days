@@ -32,7 +32,7 @@ export async function answerChat(message: string): Promise<string> {
           messages: [
             {
               role: "system",
-              content: `Eres el asistente de Stay4Days, agencia familiar de alquileres turísticos y temporales (1-11 meses) en Barcelona y alrededores. Responde en español, breve y útil. Teléfono/WhatsApp: +34 636 042 534. Email: stayfourdays@gmail.com. Reserva directa ~25% más barata. Oficina 365 días, atención en 9 idiomas. Tipos: Apartamento, Apartamento Corporativo, Casa, Casa Particular, Chalet, Condominio, Estudio, Townhome, Villa. Tickets/experiencias se compran en Tiqets. Propiedades:\n${catalog}\n\nTickets:\n${ticketList}`,
+              content: `Eres el asistente de Stay4Days, agencia familiar de alquileres turísticos y temporales (1-11 meses) en Barcelona y alrededores. Responde en español, breve y útil. Teléfono: +34 636 042 534. WhatsApp: +34 638 939 458. Contacto web: /contactar. Reserva directa ~25% más barata. Oficina 365 días, atención en 9 idiomas. Tipos: Apartamento, Apartamento Corporativo, Casa, Casa Particular, Chalet, Condominio, Estudio, Townhome, Villa. Tickets/experiencias se compran en Tiqets. Propiedades:\n${catalog}\n\nTickets:\n${ticketList}`,
             },
             { role: "user", content: message },
           ],
@@ -75,7 +75,7 @@ export async function answerChat(message: string): Promise<string> {
   }
 
   if (/contacto|whatsapp|teléfono|email|llamar/.test(lower)) {
-    return "Puedes contactarnos por WhatsApp/teléfono en +34 636 042 534 o por el formulario de /contactar. Oficina abierta 365 días al año, atención en 9 idiomas.";
+    return "Puedes contactarnos por teléfono en +34 636 042 534, por WhatsApp en +34 638 939 458 o por el formulario de /contactar. Oficina abierta 365 días al año, atención en 9 idiomas.";
   }
 
   if (/concierge|tour|servicio/.test(lower)) {

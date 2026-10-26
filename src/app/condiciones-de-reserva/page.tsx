@@ -60,7 +60,11 @@ export default function CondicionesReservaPage() {
         <p>
           La política de cancelación aplicable se indicará en la cotización o confirmación de cada
           reserva. Las modificaciones de fechas están sujetas a disponibilidad y posible ajuste de
-          precio. Para cambios urgentes contacte en {LEGAL.phone} o {LEGAL.email}.
+          precio. Para cambios urgentes contacte en {LEGAL.phone}, WhatsApp o el{" "}
+          <a href={LEGAL.contactPath} className="text-sea hover:underline">
+            formulario de contacto
+          </a>
+          .
         </p>
       </LegalSection>
 
@@ -85,20 +89,28 @@ export default function CondicionesReservaPage() {
         <p>
           {LEGAL.brand} actúa como intermediario/gestor de alojamientos según cada caso. No responde
           de circunstancias de fuerza mayor, retrasos de transporte del huésped o daños causados por
-          un uso indebido del inmueble. Cualquier reclamación debe comunicarse por escrito a{" "}
-          {LEGAL.email}.
+          un uso indebido del inmueble. Cualquier reclamación debe comunicarse por escrito a través
+          del{" "}
+          <a href={LEGAL.contactPath} className="text-sea hover:underline">
+            formulario de contacto
+          </a>
+          .
         </p>
       </LegalSection>
 
       <LegalSection title="8. Contacto">
         <p>
-          WhatsApp / teléfono:{" "}
+          Teléfono:{" "}
           <a href={LEGAL.phoneHref} className="text-sea hover:underline">
             {LEGAL.phone}
           </a>
-          . Email:{" "}
-          <a href={`mailto:${LEGAL.email}`} className="text-sea hover:underline">
-            {LEGAL.email}
+          . WhatsApp:{" "}
+          <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer" className="text-sea hover:underline">
+            +34 638 939 458
+          </a>
+          . Formulario:{" "}
+          <a href={LEGAL.contactPath} className="text-sea hover:underline">
+            {LEGAL.contactPath}
           </a>
           .
         </p>

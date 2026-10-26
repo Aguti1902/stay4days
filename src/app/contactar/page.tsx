@@ -42,15 +42,15 @@ export default function ContactPage() {
         </p>
         <div className="mt-8 space-y-3 text-sm font-semibold">
           <p>
-            Teléfono / WhatsApp:{" "}
+            Teléfono:{" "}
             <a className="text-sea" href="tel:+34636042534">
               +34 636 042 534
             </a>
           </p>
           <p>
-            Email:{" "}
-            <a className="text-sea" href="mailto:stayfourdays@gmail.com">
-              stayfourdays@gmail.com
+            WhatsApp:{" "}
+            <a className="text-sea" href="https://wa.me/34638939458" target="_blank" rel="noreferrer">
+              +34 638 939 458
             </a>
           </p>
           <p>
@@ -110,7 +110,9 @@ export default function ContactPage() {
         <button type="submit" disabled={loading} className="btn btn-primary">
           {loading ? "Enviando…" : "Enviar consulta"}
         </button>
-        {status === "ok" && <p className="text-sm text-sea">Mensaje recibido. Gracias.</p>}
+        {status === "ok" && (
+          <p className="text-sm text-sea">Mensaje recibido. Te hemos enviado un acuse por email.</p>
+        )}
         {status === "error" && <p className="text-sm text-red-600">Error al enviar.</p>}
       </form>
     </div>

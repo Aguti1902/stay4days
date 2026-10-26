@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { notifyBookingEmails } from "@/lib/email/notify";
 import {
   OwnerRezError,
   createBookableQuote,
@@ -85,11 +86,30 @@ export async function POST(req: Request) {
     });
     await savePayments(payments);
 
+    const guestName = `${firstName} ${lastName}`.trim();
+    const emails = await notifyBookingEmails({
+      guestName,
+      email,
+      phone,
+      propertyId,
+      propertyName: property.name,
+      checkIn: arrival,
+      checkOut: departure,
+      amount: quote.total,
+      currency: property.currency || "EUR",
+      paymentUrl: quote.paymentUrl,
+      reqUrl: req.url,
+    }).catch((err) => {
+      console.error("[booking] email notify failed", err);
+      return null;
+    });
+
     return NextResponse.json({
       ok: true,
       mode,
       quote,
       paymentUrl: quote.paymentUrl,
+      emails,
     });
   } catch (err) {
     const raw = err instanceof OwnerRezError ? err.message : "No se pudo crear la cotización.";

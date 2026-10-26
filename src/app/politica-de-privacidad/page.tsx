@@ -24,13 +24,19 @@ export default function PrivacidadPage() {
             <strong>Domicilio:</strong> {LEGAL.domicilio}
           </li>
           <li>
-            <strong>Email:</strong>{" "}
-            <a href={`mailto:${LEGAL.email}`} className="text-sea hover:underline">
-              {LEGAL.email}
+            <strong>Teléfono:</strong> {LEGAL.phone}
+          </li>
+          <li>
+            <strong>WhatsApp:</strong>{" "}
+            <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer" className="text-sea hover:underline">
+              +34 638 939 458
             </a>
           </li>
           <li>
-            <strong>Teléfono:</strong> {LEGAL.phone}
+            <strong>Formulario de contacto:</strong>{" "}
+            <a href={LEGAL.contactPath} className="text-sea hover:underline">
+              {LEGAL.contactPath}
+            </a>
           </li>
           <li>
             <strong>Web:</strong> {LEGAL.site}
@@ -130,11 +136,14 @@ export default function PrivacidadPage() {
       </LegalSection>
 
       <LegalSection title="6. Derechos de las personas interesadas">
-        <p>Puede ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, así como retirar el consentimiento cuando este sea la base del tratamiento, escribiendo a{" "}
-          <a href={`mailto:${LEGAL.email}`} className="text-sea hover:underline">
-            {LEGAL.email}
-          </a>{" "}
-          e identificándose de forma adecuada.
+        <p>
+          Puede ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y
+          portabilidad, así como retirar el consentimiento cuando este sea la base del tratamiento,
+          a través del{" "}
+          <a href={LEGAL.contactPath} className="text-sea hover:underline">
+            formulario de contacto
+          </a>
+          , por teléfono ({LEGAL.phone}) o WhatsApp, e identificándose de forma adecuada.
         </p>
         <p>
           También puede presentar una reclamación ante la{" "}

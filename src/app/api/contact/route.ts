@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { notifyContactEmails } from "@/lib/email/notify";
 import { bumpStat, getContacts, saveContacts } from "@/lib/store";
 import { uid } from "@/lib/utils";
 import type { ContactLead } from "@/lib/types";
@@ -30,5 +31,10 @@ export async function POST(req: Request) {
   await saveContacts(contacts);
   await bumpStat("contacts");
 
-  return NextResponse.json({ ok: true, id: lead.id });
+  const emails = await notifyContactEmails(lead, req.url).catch((err) => {
+    console.error("[contact] email notify failed", err);
+    return null;
+  });
+
+  return NextResponse.json({ ok: true, id: lead.id, emails });
 }

@@ -1,7 +1,8 @@
 export const LEGAL = {
   brand: "Stay4Days",
   titular: "Stay4Days",
-  email: "stayfourdays@gmail.com",
+  /** Destinatario interno del formulario de contacto (no se muestra en la web). */
+  contactInbox: "nati2525@hotmail.com",
   phone: "+34 636 042 534",
   phoneHref: "tel:+34636042534",
   whatsappNumber: "34638939458",
@@ -9,6 +10,7 @@ export const LEGAL = {
     "https://wa.me/34638939458?text=" +
     encodeURIComponent("Hola, me interesa una vivienda de Stay4Days."),
   site: "https://stay4days.com",
+  contactPath: "/contactar",
   domicilio: "Barcelona y área metropolitana, España",
   authority: "Agencia Española de Protección de Datos (AEPD)",
   authorityUrl: "https://www.aepd.es",

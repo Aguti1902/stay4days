@@ -101,10 +101,10 @@ export default function CookiesPage() {
             Política de Privacidad
           </Link>
           . Contacto:{" "}
-          <a href={`mailto:${LEGAL.email}`} className="text-sea hover:underline">
-            {LEGAL.email}
+          <a href={LEGAL.contactPath} className="text-sea hover:underline">
+            formulario de contacto
           </a>
-          .
+          , teléfono {LEGAL.phone} o WhatsApp.
         </p>
       </LegalSection>
     </LegalPageShell>

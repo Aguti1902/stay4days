@@ -9,6 +9,7 @@ import type {
   Ticket,
 } from "./types";
 import { SEED_CONTACTS, SEED_PAYMENTS, SEED_TICKETS } from "./seed-data";
+import { stripHtml } from "./utils";
 
 /** Bundled seed/data shipped with the deploy (read-only on Vercel). */
 const SEED_DIR = path.join(process.cwd(), "src", "data");
@@ -81,8 +82,9 @@ export async function getProperties(): Promise<Property[]> {
   const settings = await getSettings();
   return props.map((p) => ({
     ...p,
+    description: p.description ? stripHtml(p.description) : p.description,
     photos: p.photos ?? (p.thumbnail ? [{ url: p.thumbnail }] : []),
-    amenities: p.amenities ?? [],
+    amenities: (p.amenities ?? []).map((a) => stripHtml(String(a))).filter(Boolean),
     tags: p.tags ?? [],
     visible: settings.hiddenPropertyIds.includes(p.id) ? false : p.visible !== false,
   }));

@@ -4,7 +4,10 @@ export const LEGAL = {
   email: "stayfourdays@gmail.com",
   phone: "+34 636 042 534",
   phoneHref: "tel:+34636042534",
-  whatsapp: "https://wa.me/34636042534",
+  whatsappNumber: "34638939458",
+  whatsapp:
+    "https://wa.me/34638939458?text=" +
+    encodeURIComponent("Hola, me interesa una vivienda de Stay4Days."),
   site: "https://stay4days.com",
   domicilio: "Barcelona y área metropolitana, España",
   authority: "Agencia Española de Protección de Datos (AEPD)",

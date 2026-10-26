@@ -1,5 +1,6 @@
 import type { Property, PropertyPhoto } from "./types";
 import { normalizePropertyType } from "./property-types";
+import { stripHtml } from "@/lib/utils";
 
 const BASE = "https://api.ownerrez.com";
 
@@ -459,21 +460,6 @@ export async function fetchPayments(limit = 50) {
 
 export async function fetchInquiries(limit = 50) {
   return ownerrezFetch<Pageable<Record<string, unknown>>>("/v2/inquiries", { limit });
-}
-
-function stripHtml(html: string) {
-  return html
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<\/p>/gi, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
 }
 
 function pickDescription(listing?: OwnerRezListing) {

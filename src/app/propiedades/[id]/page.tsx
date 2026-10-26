@@ -9,6 +9,7 @@ import { ContactPropertyForm } from "@/components/properties/ContactPropertyForm
 import { BookingWidget } from "@/components/properties/BookingWidget";
 import { PropertyMapSingle } from "@/components/properties/PropertyMapSingle";
 import { AmenitiesSection } from "@/components/properties/AmenitiesSection";
+import { LEGAL } from "@/lib/legal";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -133,7 +134,7 @@ export default async function PropertyDetailPage({
             <p className="mb-3 text-sm font-semibold text-ink-soft">¿Prefieres que te contactemos?</p>
             <ContactPropertyForm propertyId={property.id} propertyName={property.name} />
           </div>
-          <a href="https://wa.me/34636042534" target="_blank" rel="noreferrer" className="btn btn-secondary w-full">
+          <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer" className="btn btn-secondary w-full">
             WhatsApp
           </a>
         </aside>

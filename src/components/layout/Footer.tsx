@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { openCookieSettings } from "@/components/legal/CookieBanner";
+import { LEGAL } from "@/lib/legal";
 
 export function Footer() {
   const pathname = usePathname();
@@ -57,7 +58,7 @@ export function Footer() {
           <div className="mt-4 flex flex-col gap-2 text-sm text-white/85">
             <a href="tel:+34636042534">+34 636 042 534</a>
             <a href="mailto:stayfourdays@gmail.com">stayfourdays@gmail.com</a>
-            <a href="https://wa.me/34636042534" target="_blank" rel="noreferrer">
+            <a href={LEGAL.whatsapp} target="_blank" rel="noreferrer">
               WhatsApp
             </a>
             <a href="https://www.instagram.com/stay4days/?hl=es" target="_blank" rel="noreferrer">
